@@ -20,17 +20,17 @@ Clone the repository to your local machine (if you haven't done this already):
 git clone https://github.com/Kaustubh-trivedi/react-screen-recorder.git
 
 
-Step 2: Install Dependencies
+### Step 2: Install Dependencies
 Navigate to the project directory and install the required dependencies:
 
 
 cd react-screen-recorder
 npm install
 
-Running the Development Server
+## Running the Development Server
 Once the dependencies are installed, you can start the development server to view the app locally.
 
-Step 1: Run the Development Server
+### Step 1: Run the Development Server
 To start the development server, run:
 
 npm run dev
@@ -38,7 +38,7 @@ npm run dev
 By default, the app will be available at http://localhost:5173. Open this URL in your browser to see the app in action.
 
 
-Building the Project for Production
+## Building the Project for Production
 To create an optimized production build, run the following command:     
 
 npm run build
