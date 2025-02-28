@@ -29,7 +29,7 @@ const App = () => {
         const blob = new Blob(chunks, { type: 'video/webm' });
         const url = URL.createObjectURL(blob);
         setVideoURL(url);
-        setFileName(`screen-recording-${new Date().toISOString()}.webm`);
+        setFileName(`react-screen-recording-${new Date().toISOString()}.webm`);
       };
 
       recorder.start();
@@ -57,7 +57,7 @@ const App = () => {
   return (
     <div className="App">
       <div>
-        <h1 className='d-flex-j-c-a-c'>Kaustubh's React <><img src="/react-animation.gif" alt="" /></> Recorder</h1>
+        <h1 className='d-flex-j-c-a-c'>React <><img className='h-100' src="/react-animation.gif" alt="" /></> Screen Recorder</h1>
         {!recording ? (
           <button onClick={startRecording}>Start Recording ▶️</button>
         ) : (
@@ -69,8 +69,12 @@ const App = () => {
       {videoURL && (
         <div>
           <h2>Recording Finished!</h2>
-          <button onClick={downloadRecording}>Download Recording</button>
-          <video controls src={videoURL} />
+          <button onClick={downloadRecording}>Download Recording &#x2193;</button>
+          <div className='player'>
+            <div className="border">
+              <video controls src={videoURL} />
+            </div>
+          </div>
           <br />
 
         </div>
